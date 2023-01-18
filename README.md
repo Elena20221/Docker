@@ -1,9 +1,10 @@
-# CRUD
+## Домашнее задание 2 к лекции "Docker"
+### 1. Для создания контейнера выполнить команду 
+      docker build . --tag=my_new_stocks1 
 
-Необходимо выполнить и предоставить на проверку задачу:
+### 2. Для запуска контейнера выполнить команду
+      docker run -d -p 8000:6060 --name=my_stocks_products3 my_new_stocks1
 
-[Склады и товары](./stocks_products)
-
-Работа должна соответствовать принятому [стилю оформления кода](https://github.com/netology-code/codestyle/tree/master/python).
-
-Любые вопросы по решению задач задавайте в чате учебной группы.
+### 3.Проверка:
+* http://localhost:8000/api/v1/
+* отправить запрос из файла [requests-examples.http.]()
